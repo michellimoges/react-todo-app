@@ -47,14 +47,6 @@ class App extends Component {
             .then(response => this.setState({
                 todos: [...this.state.todos, response.data]
             }));
-        const newTodo = {
-            id:
-            title,
-            completed: false
-        };
-        this.setState({
-            todos: [...this.state.todos, newTodo]
-        })
     };
 
     render() {
